@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B1DD00A1C8DC56000F6D485 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B1DD0091C8DC56000F6D485 /* main.cpp */; };
+		4B263E8B1C977743009B0826 /* PieceDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B263E8A1C977743009B0826 /* PieceDelegate.cpp */; };
+		4B30C1061CB04C390002F83B /* EvaluationValueHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B30C1051CB04C390002F83B /* EvaluationValueHandler.cpp */; };
+		4B31AB361C904BB2001F23E3 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B31AB351C904BB2001F23E3 /* Player.cpp */; };
+		4B3580691C9204E200DB453D /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B3580681C9204E200DB453D /* Board.cpp */; };
+		4B48A7BE1CABF2FB0078D05F /* BasicStructs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B48A7BD1CABF2FB0078D05F /* BasicStructs.cpp */; };
+		4B5071AD1C9BCBC300D0E0BE /* Bitboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B5071AC1C9BCBC300D0E0BE /* Bitboard.cpp */; };
+		4B5071AF1C9BCF8800D0E0BE /* CentralBitboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B5071AE1C9BCF8800D0E0BE /* CentralBitboard.cpp */; };
+		4B5071B11C9BCF9600D0E0BE /* DecentralBitboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B5071B01C9BCF9600D0E0BE /* DecentralBitboard.cpp */; };
+		4B72F68A1C97CAEA004D3D51 /* PieceStrategyDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B72F6891C97CAEA004D3D51 /* PieceStrategyDelegate.cpp */; };
+		4BDED3821C8DF802001750C6 /* GameLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BDED3811C8DF802001750C6 /* GameLogic.cpp */; };
+		4BDED3881C8DF893001750C6 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BDED3871C8DF893001750C6 /* View.cpp */; };
+		4BDED38D1C8DFD8B001750C6 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BDED38C1C8DFD8B001750C6 /* Controller.cpp */; };
+		4BE245571C8E0781003FEF39 /* ViewDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE245561C8E0781003FEF39 /* ViewDelegate.cpp */; };
+		4BE245591C8E0E0F003FEF39 /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE245581C8E0E0F003FEF39 /* Constants.cpp */; };
+		4BE2455B1C8E1C2E003FEF39 /* PawnStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2455A1C8E1C2E003FEF39 /* PawnStrategy.cpp */; };
+		4BE2455E1C8E1C65003FEF39 /* Piece.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2455D1C8E1C65003FEF39 /* Piece.cpp */; };
+		4BE245621C8E292F003FEF39 /* PieceStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE245611C8E292F003FEF39 /* PieceStrategy.cpp */; };
+		4BE245641C8E2AB2003FEF39 /* KnightStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE245631C8E2AB2003FEF39 /* KnightStrategy.cpp */; };
+		4BE245661C8E2AC5003FEF39 /* BishopStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE245651C8E2AC5003FEF39 /* BishopStrategy.cpp */; };
+		4BE2456A1C8E2AE6003FEF39 /* RookStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE245691C8E2AE6003FEF39 /* RookStrategy.cpp */; };
+		4BE2456C1C8E2AF6003FEF39 /* QueenStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2456B1C8E2AF6003FEF39 /* QueenStrategy.cpp */; };
+		4BE2456E1C8E2B02003FEF39 /* KingStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2456D1C8E2B02003FEF39 /* KingStrategy.cpp */; };
+		4BE245701C8E40ED003FEF39 /* ErrorDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2456F1C8E40ED003FEF39 /* ErrorDelegate.cpp */; };
+		4BE245721C8E4F11003FEF39 /* PieceFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE245711C8E4F11003FEF39 /* PieceFactory.cpp */; };
+		4BE6D6F61C9E79A4008AA98F /* BitboardHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6D6F51C9E79A4008AA98F /* BitboardHandler.cpp */; };
+		4BF32E2E1CA9E00B000744A6 /* AIPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BF32E2D1CA9E00B000744A6 /* AIPlayer.cpp */; };
+		4BF32E301CA9E390000744A6 /* InputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BF32E2F1CA9E390000744A6 /* InputDelegate.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B1DD0041C8DC56000F6D485 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4B1DD0061C8DC56000F6D485 /* Chess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chess; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1DD0091C8DC56000F6D485 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4B263E8A1C977743009B0826 /* PieceDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PieceDelegate.cpp; path = Others/PieceDelegate.cpp; sourceTree = "<group>"; };
+		4B30C1051CB04C390002F83B /* EvaluationValueHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EvaluationValueHandler.cpp; path = Models/EvaluationValueHandler.cpp; sourceTree = "<group>"; };
+		4B31AB351C904BB2001F23E3 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = Models/Player.cpp; sourceTree = "<group>"; };
+		4B3580681C9204E200DB453D /* Board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Board.cpp; path = Models/Board.cpp; sourceTree = "<group>"; };
+		4B48A7BD1CABF2FB0078D05F /* BasicStructs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BasicStructs.cpp; path = Others/BasicStructs.cpp; sourceTree = "<group>"; };
+		4B5071AC1C9BCBC300D0E0BE /* Bitboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bitboard.cpp; path = Models/Bitboard.cpp; sourceTree = "<group>"; };
+		4B5071AE1C9BCF8800D0E0BE /* CentralBitboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CentralBitboard.cpp; path = Models/CentralBitboard.cpp; sourceTree = "<group>"; };
+		4B5071B01C9BCF9600D0E0BE /* DecentralBitboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DecentralBitboard.cpp; path = Models/DecentralBitboard.cpp; sourceTree = "<group>"; };
+		4B72F6891C97CAEA004D3D51 /* PieceStrategyDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PieceStrategyDelegate.cpp; path = Others/PieceStrategyDelegate.cpp; sourceTree = "<group>"; };
+		4BDED3811C8DF802001750C6 /* GameLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameLogic.cpp; path = Models/GameLogic.cpp; sourceTree = "<group>"; };
+		4BDED3871C8DF893001750C6 /* View.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = View.cpp; path = Views/View.cpp; sourceTree = "<group>"; };
+		4BDED38C1C8DFD8B001750C6 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Controller.cpp; path = Controllers/Controller.cpp; sourceTree = "<group>"; };
+		4BE245561C8E0781003FEF39 /* ViewDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ViewDelegate.cpp; path = Others/ViewDelegate.cpp; sourceTree = "<group>"; };
+		4BE245581C8E0E0F003FEF39 /* Constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Constants.cpp; path = Others/Constants.cpp; sourceTree = "<group>"; };
+		4BE2455A1C8E1C2E003FEF39 /* PawnStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PawnStrategy.cpp; path = Models/Pieces/PawnStrategy.cpp; sourceTree = "<group>"; };
+		4BE2455D1C8E1C65003FEF39 /* Piece.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Piece.cpp; path = Models/Pieces/Piece.cpp; sourceTree = "<group>"; };
+		4BE245611C8E292F003FEF39 /* PieceStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PieceStrategy.cpp; path = Models/Pieces/PieceStrategy.cpp; sourceTree = "<group>"; };
+		4BE245631C8E2AB2003FEF39 /* KnightStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KnightStrategy.cpp; path = Models/Pieces/KnightStrategy.cpp; sourceTree = "<group>"; };
+		4BE245651C8E2AC5003FEF39 /* BishopStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BishopStrategy.cpp; path = Models/Pieces/BishopStrategy.cpp; sourceTree = "<group>"; };
+		4BE245691C8E2AE6003FEF39 /* RookStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RookStrategy.cpp; path = Models/Pieces/RookStrategy.cpp; sourceTree = "<group>"; };
+		4BE2456B1C8E2AF6003FEF39 /* QueenStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = QueenStrategy.cpp; path = Models/Pieces/QueenStrategy.cpp; sourceTree = "<group>"; };
+		4BE2456D1C8E2B02003FEF39 /* KingStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KingStrategy.cpp; path = Models/Pieces/KingStrategy.cpp; sourceTree = "<group>"; };
+		4BE2456F1C8E40ED003FEF39 /* ErrorDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ErrorDelegate.cpp; path = Others/ErrorDelegate.cpp; sourceTree = "<group>"; };
+		4BE245711C8E4F11003FEF39 /* PieceFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PieceFactory.cpp; path = Others/PieceFactory.cpp; sourceTree = "<group>"; };
+		4BE6D6F51C9E79A4008AA98F /* BitboardHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BitboardHandler.cpp; path = Models/BitboardHandler.cpp; sourceTree = "<group>"; };
+		4BF32E2D1CA9E00B000744A6 /* AIPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AIPlayer.cpp; path = Models/AIPlayer.cpp; sourceTree = "<group>"; };
+		4BF32E2F1CA9E390000744A6 /* InputDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputDelegate.cpp; path = Others/InputDelegate.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B1DD0031C8DC56000F6D485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B1DCFFD1C8DC56000F6D485 = {
+			isa = PBXGroup;
+			children = (
+				4B1DD0081C8DC56000F6D485 /* Chess */,
+				4B1DD0071C8DC56000F6D485 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B1DD0071C8DC56000F6D485 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B1DD0061C8DC56000F6D485 /* Chess */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B1DD0081C8DC56000F6D485 /* Chess */ = {
+			isa = PBXGroup;
+			children = (
+				4B1DD0091C8DC56000F6D485 /* main.cpp */,
+				4BDED38B1C8DFD6C001750C6 /* Controllers */,
+				4BDED3851C8DF856001750C6 /* Models */,
+				4BDED3941C8E025E001750C6 /* Others */,
+				4BDED3861C8DF860001750C6 /* Views */,
+			);
+			path = Chess;
+			sourceTree = "<group>";
+		};
+		4BDED3851C8DF856001750C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BF32E2D1CA9E00B000744A6 /* AIPlayer.cpp */,
+				4B5071AC1C9BCBC300D0E0BE /* Bitboard.cpp */,
+				4BE6D6F51C9E79A4008AA98F /* BitboardHandler.cpp */,
+				4B3580681C9204E200DB453D /* Board.cpp */,
+				4B5071AE1C9BCF8800D0E0BE /* CentralBitboard.cpp */,
+				4B5071B01C9BCF9600D0E0BE /* DecentralBitboard.cpp */,
+				4B30C1051CB04C390002F83B /* EvaluationValueHandler.cpp */,
+				4BDED3811C8DF802001750C6 /* GameLogic.cpp */,
+				4BE2455C1C8E1C36003FEF39 /* Pieces */,
+				4B31AB351C904BB2001F23E3 /* Player.cpp */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4BDED3861C8DF860001750C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BDED3871C8DF893001750C6 /* View.cpp */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4BDED38B1C8DFD6C001750C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BDED38C1C8DFD8B001750C6 /* Controller.cpp */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4BDED3941C8E025E001750C6 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				4B48A7BD1CABF2FB0078D05F /* BasicStructs.cpp */,
+				4BE245581C8E0E0F003FEF39 /* Constants.cpp */,
+				4BE2456F1C8E40ED003FEF39 /* ErrorDelegate.cpp */,
+				4BF32E2F1CA9E390000744A6 /* InputDelegate.cpp */,
+				4B263E8A1C977743009B0826 /* PieceDelegate.cpp */,
+				4BE245711C8E4F11003FEF39 /* PieceFactory.cpp */,
+				4B72F6891C97CAEA004D3D51 /* PieceStrategyDelegate.cpp */,
+				4BE245561C8E0781003FEF39 /* ViewDelegate.cpp */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		4BE2455C1C8E1C36003FEF39 /* Pieces */ = {
+			isa = PBXGroup;
+			children = (
+				4BE245651C8E2AC5003FEF39 /* BishopStrategy.cpp */,
+				4BE2456D1C8E2B02003FEF39 /* KingStrategy.cpp */,
+				4BE245631C8E2AB2003FEF39 /* KnightStrategy.cpp */,
+				4BE2455A1C8E1C2E003FEF39 /* PawnStrategy.cpp */,
+				4BE2455D1C8E1C65003FEF39 /* Piece.cpp */,
+				4BE245611C8E292F003FEF39 /* PieceStrategy.cpp */,
+				4BE2456B1C8E2AF6003FEF39 /* QueenStrategy.cpp */,
+				4BE245691C8E2AE6003FEF39 /* RookStrategy.cpp */,
+			);
+			name = Pieces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B1DD0051C8DC56000F6D485 /* Chess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B1DD00D1C8DC56000F6D485 /* Build configuration list for PBXNativeTarget "Chess" */;
+			buildPhases = (
+				4B1DD0021C8DC56000F6D485 /* Sources */,
+				4B1DD0031C8DC56000F6D485 /* Frameworks */,
+				4B1DD0041C8DC56000F6D485 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chess;
+			productName = Chess;
+			productReference = 4B1DD0061C8DC56000F6D485 /* Chess */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B1DCFFE1C8DC56000F6D485 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Adnan Zahid";
+				TargetAttributes = {
+					4B1DD0051C8DC56000F6D485 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 4B1DD0011C8DC56000F6D485 /* Build configuration list for PBXProject "Chess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B1DCFFD1C8DC56000F6D485;
+			productRefGroup = 4B1DD0071C8DC56000F6D485 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B1DD0051C8DC56000F6D485 /* Chess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B1DD0021C8DC56000F6D485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDED3881C8DF893001750C6 /* View.cpp in Sources */,
+				4B5071AD1C9BCBC300D0E0BE /* Bitboard.cpp in Sources */,
+				4BE245621C8E292F003FEF39 /* PieceStrategy.cpp in Sources */,
+				4B48A7BE1CABF2FB0078D05F /* BasicStructs.cpp in Sources */,
+				4B3580691C9204E200DB453D /* Board.cpp in Sources */,
+				4B31AB361C904BB2001F23E3 /* Player.cpp in Sources */,
+				4B72F68A1C97CAEA004D3D51 /* PieceStrategyDelegate.cpp in Sources */,
+				4B5071B11C9BCF9600D0E0BE /* DecentralBitboard.cpp in Sources */,
+				4BE245591C8E0E0F003FEF39 /* Constants.cpp in Sources */,
+				4BE2456C1C8E2AF6003FEF39 /* QueenStrategy.cpp in Sources */,
+				4BDED3821C8DF802001750C6 /* GameLogic.cpp in Sources */,
+				4B263E8B1C977743009B0826 /* PieceDelegate.cpp in Sources */,
+				4BE2455E1C8E1C65003FEF39 /* Piece.cpp in Sources */,
+				4BE245641C8E2AB2003FEF39 /* KnightStrategy.cpp in Sources */,
+				4B5071AF1C9BCF8800D0E0BE /* CentralBitboard.cpp in Sources */,
+				4BF32E301CA9E390000744A6 /* InputDelegate.cpp in Sources */,
+				4B30C1061CB04C390002F83B /* EvaluationValueHandler.cpp in Sources */,
+				4BF32E2E1CA9E00B000744A6 /* AIPlayer.cpp in Sources */,
+				4BE2456E1C8E2B02003FEF39 /* KingStrategy.cpp in Sources */,
+				4B1DD00A1C8DC56000F6D485 /* main.cpp in Sources */,
+				4BE245571C8E0781003FEF39 /* ViewDelegate.cpp in Sources */,
+				4BE245701C8E40ED003FEF39 /* ErrorDelegate.cpp in Sources */,
+				4BE6D6F61C9E79A4008AA98F /* BitboardHandler.cpp in Sources */,
+				4BDED38D1C8DFD8B001750C6 /* Controller.cpp in Sources */,
+				4BE2455B1C8E1C2E003FEF39 /* PawnStrategy.cpp in Sources */,
+				4BE2456A1C8E2AE6003FEF39 /* RookStrategy.cpp in Sources */,
+				4BE245661C8E2AC5003FEF39 /* BishopStrategy.cpp in Sources */,
+				4BE245721C8E4F11003FEF39 /* PieceFactory.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B1DD00B1C8DC56000F6D485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		4B1DD00C1C8DC56000F6D485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		4B1DD00E1C8DC56000F6D485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4B1DD00F1C8DC56000F6D485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B1DD0011C8DC56000F6D485 /* Build configuration list for PBXProject "Chess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B1DD00B1C8DC56000F6D485 /* Debug */,
+				4B1DD00C1C8DC56000F6D485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B1DD00D1C8DC56000F6D485 /* Build configuration list for PBXNativeTarget "Chess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B1DD00E1C8DC56000F6D485 /* Debug */,
+				4B1DD00F1C8DC56000F6D485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B1DCFFE1C8DC56000F6D485 /* Project object */;
+}

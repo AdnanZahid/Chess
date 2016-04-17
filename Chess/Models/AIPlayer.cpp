@@ -39,7 +39,7 @@ public:
                 Position fromPosition = pieceNode->position;
                 Position toPosition = *iterator;
                 
-                if (pieceNode->moveTo(toPosition) == true) {
+                if (player->movePiece(pieceNode->position, toPosition) == true) {
                     player->updateMoves();
                     
                     Move value = { fromPosition, toPosition, -(alphaBeta(depth - 1, player->opponent, -beta, -alpha)) };
@@ -84,7 +84,7 @@ public:
                 Position fromPosition = pieceNode->position;
                 Position toPosition = *iterator;
                 
-                if (pieceNode->moveTo(toPosition) == true) {
+                if (player->movePiece(pieceNode->position, toPosition) == true) {
                     player->updateMoves();
                     
                     int value = -(this->alphaBeta(depth - 1, player->opponent,-beta,-alpha));

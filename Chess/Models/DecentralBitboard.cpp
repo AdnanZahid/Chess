@@ -17,9 +17,9 @@ public:
         this->position = this->computeBitboardFromPosition(position);
     }
     
-    void setMoves(std::list<Position> moves) {
+    void setMoves(std::vector<Position> moves) {
         this->moves = 0;
-        for(std::list<Position>::iterator iterator = moves.begin(); iterator != moves.end(); iterator++) {
+        for(std::vector<Position>::iterator iterator = moves.begin(); iterator != moves.end(); iterator++) {
             this->moves |= this->computeBitboardFromPosition(*iterator);
         }
     }

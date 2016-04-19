@@ -35,7 +35,7 @@ public:
 //        this->displayMobility();
 //        this->displayValue();
 //        this->displayOrder();
-//        this->displayEvaluationValue();
+        this->displayEvaluationValue();
 //        this->displayPresenceBoards();
     }
     

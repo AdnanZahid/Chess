@@ -32,7 +32,7 @@ public:
     virtual void setColor(Color color) = 0;
     virtual void setPosition(Position position) = 0;
     virtual bool move(Position from, Position to) = 0;
-    virtual std::list<Position> getMoves(Position position) = 0;
+    virtual std::vector<Position> getMoves(Position position) = 0;
     virtual void updateMoves() = 0;
     
     PieceStrategy(Board *board) {
@@ -40,7 +40,7 @@ public:
         this->decentralBitboard = new DecentralBitboard();
     }
     
-    std::list<Position> addMoveToList(Position from, Position to, std::list<Position> movesList) {
+    std::vector<Position> addMoveToList(Position from, Position to, std::vector<Position> movesList) {
         
         if (this->move(from, to) == true) {
             movesList.push_back(to);

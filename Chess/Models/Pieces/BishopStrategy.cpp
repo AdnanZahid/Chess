@@ -32,10 +32,10 @@ private:
         this->centralBitboard->setBishopMoves(this->decentralBitboard);
     }
     
-    std::list<Position> getMoves(Position position) {
+    std::vector<Position> getMoves(Position position) {
         
         this->mobility = 0;
-        std::list<Position> movesList;
+        std::vector<Position> movesList;
         movesList = this->getMoves(this, movesList);
         return movesList;
     }
@@ -44,7 +44,7 @@ public:
     BishopStrategy(Board *board) : PieceStrategy(board) {
     }
     
-    static std::list<Position> getMoves(PieceStrategy *pieceStrategy, std::list<Position> movesList) {
+    static std::vector<Position> getMoves(PieceStrategy *pieceStrategy, std::vector<Position> movesList) {
         
         Index index = pieceStrategy->board->positionToIndex(pieceStrategy->position);
         

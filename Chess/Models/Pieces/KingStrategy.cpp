@@ -32,10 +32,10 @@ private:
         this->centralBitboard->setKingMoves(this->decentralBitboard);
     }
     
-    std::list<Position> getMoves(Position position) {
+    std::vector<Position> getMoves(Position position) {
         
         this->mobility = 0;
-        std::list<Position> movesList;
+        std::vector<Position> movesList;
         
         if (position.rank > RANK_ONE) {
             Position toOneForwardStep = { (char)(position.rank - 1), position.file };

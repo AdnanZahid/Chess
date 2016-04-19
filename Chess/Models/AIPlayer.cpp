@@ -30,11 +30,11 @@ public:
         
         Move bestValue = { { '\0', '\0' }, { '\0', '\0' }, std::numeric_limits<int>::min() };
         
-        for(std::vector<Piece *>::iterator pieceNode = player->piecesList.begin(); pieceNode != player->piecesList.end(); pieceNode++) {
+        for(std::list<Piece *>::iterator pieceNode = player->piecesList.begin(); pieceNode != player->piecesList.end(); pieceNode++) {
             
-            std::vector<Position> moves = player->centralBitboard->computePositionsFromBitboard((*pieceNode)->pieceStrategy->decentralBitboard->moves);
+            std::list<Position> moves = player->centralBitboard->computePositionsFromBitboard((*pieceNode)->pieceStrategy->decentralBitboard->moves);
             
-            for(std::vector<Position>::iterator iterator = moves.begin(); iterator != moves.end(); iterator++) {
+            for(std::list<Position>::iterator iterator = moves.begin(); iterator != moves.end(); iterator++) {
                 
                 Position fromPosition = (*pieceNode)->position;
                 Position toPosition = *iterator;
@@ -75,11 +75,11 @@ public:
         
         int bestValue = std::numeric_limits<int>::min();
                 
-        for(std::vector<Piece *>::iterator pieceNode = player->piecesList.begin(); pieceNode != player->piecesList.end(); pieceNode++) {
+        for(std::list<Piece *>::iterator pieceNode = player->piecesList.begin(); pieceNode != player->piecesList.end(); pieceNode++) {
             
-            std::vector<Position> moves = player->centralBitboard->computePositionsFromBitboard((*pieceNode)->pieceStrategy->decentralBitboard->moves);
+            std::list<Position> moves = player->centralBitboard->computePositionsFromBitboard((*pieceNode)->pieceStrategy->decentralBitboard->moves);
             
-            for(std::vector<Position>::iterator iterator = moves.begin(); iterator != moves.end(); iterator++) {
+            for(std::list<Position>::iterator iterator = moves.begin(); iterator != moves.end(); iterator++) {
                 
                 Position fromPosition = (*pieceNode)->position;
                 Position toPosition = *iterator;

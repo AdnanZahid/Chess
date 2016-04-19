@@ -31,10 +31,10 @@ private:
         this->centralBitboard->setKnightMoves(this->decentralBitboard);
     }
     
-    std::vector<Position> getMoves(Position position) {
+    std::list<Position> getMoves(Position position) {
         
         this->mobility = 0;
-        std::vector<Position> movesList;
+        std::list<Position> movesList;
         
         if (position.file > FILE_A) {
             if (position.rank > RANK_TWO) {

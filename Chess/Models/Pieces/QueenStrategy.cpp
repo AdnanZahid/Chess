@@ -33,10 +33,10 @@ private:
         this->centralBitboard->setQueenMoves(this->decentralBitboard);
     }
     
-    std::vector<Position> getMoves(Position position) {
+    std::list<Position> getMoves(Position position) {
         
         this->mobility = 0;
-        std::vector<Position> movesList;
+        std::list<Position> movesList;
         movesList = BishopStrategy::getMoves(this, movesList);
         movesList = RookStrategy::getMoves(this, movesList);
         return movesList;

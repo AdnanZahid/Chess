@@ -32,10 +32,10 @@ private:
         this->centralBitboard->setRookMoves(this->decentralBitboard);
     }
     
-    std::vector<Position> getMoves(Position position) {
+    std::list<Position> getMoves(Position position) {
         
         this->mobility = 0;
-        std::vector<Position> movesList;
+        std::list<Position> movesList;
         movesList = this->getMoves(this, movesList);
         return movesList;
     }
@@ -44,7 +44,7 @@ public:
     RookStrategy(Board *board) : PieceStrategy(board) {
     }
     
-    static std::vector<Position> getMoves(PieceStrategy *pieceStrategy, std::vector<Position> movesList) {
+    static std::list<Position> getMoves(PieceStrategy *pieceStrategy, std::list<Position> movesList) {
         
         Index fromIndex = pieceStrategy->board->positionToIndex(pieceStrategy->position);
         Index index = fromIndex;

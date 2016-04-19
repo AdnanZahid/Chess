@@ -37,9 +37,9 @@ public:
     }
     
     void updateArray(bool whiteArray[8][8], bool blackArray[8][8], U64 bitboard) {
-        std::vector<Position> moves = this->centralBitboard->computePositionsFromBitboard(bitboard);
+        std::list<Position> moves = this->centralBitboard->computePositionsFromBitboard(bitboard);
         
-        for(std::vector<Position>::iterator iterator = moves.begin(); iterator != moves.end(); iterator++) {
+        for(std::list<Position>::iterator iterator = moves.begin(); iterator != moves.end(); iterator++) {
             Index index = this->board->positionToIndex(*iterator);
             
             if (this->color == white) {

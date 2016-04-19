@@ -42,10 +42,10 @@ private:
         this->centralBitboard->setPawnMoves(this->decentralBitboard);
     }
     
-    std::vector<Position> getMoves(Position position) {
+    std::list<Position> getMoves(Position position) {
         
         this->mobility = 0;
-        std::vector<Position> movesList;
+        std::list<Position> movesList;
         
         if ((this->color == white && position.rank < RANK_SEVEN) || (this->color == black && position.rank > RANK_TWO)) {
             if ((this->color == white && position.rank < RANK_EIGHT) || (this->color == black && position.rank > RANK_ONE)) {

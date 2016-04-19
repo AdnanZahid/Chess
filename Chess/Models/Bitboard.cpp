@@ -10,7 +10,7 @@
 
 #include "../Others/Constants.cpp"
 #include "Board.cpp"
-#include <vector>
+#include <list>
 
 class Bitboard {
     
@@ -18,9 +18,9 @@ public:
     U64 position;
     U64 moves;
     
-    std::vector<Position> computePositionsFromBitboard(U64 bitboardPosition) {
+    std::list<Position> computePositionsFromBitboard(U64 bitboardPosition) {
         
-        std::vector<Position> list;
+        std::list<Position> list;
         
         for(int order = 0; bitboardPosition != 0;) {
             for(; (bitboardPosition & 1) != 1; bitboardPosition >>= 1) {

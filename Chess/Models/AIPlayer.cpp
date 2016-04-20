@@ -30,7 +30,9 @@ public:
         
         Move bestValue = { { '\0', '\0' }, { '\0', '\0' }, std::numeric_limits<int>::min() };
         
-        for(std::list<Piece *>::iterator pieceNode = player->piecesList.begin(); pieceNode != player->piecesList.end(); pieceNode++) {
+        std::list<Piece *> copyOfPiecesList = player->piecesList;
+        
+        for(std::list<Piece *>::iterator pieceNode = copyOfPiecesList.begin(); pieceNode != copyOfPiecesList.end(); pieceNode++) {
             
             std::list<Position> moves = player->centralBitboard->computePositionsFromBitboard((*pieceNode)->pieceStrategy->decentralBitboard->moves);
             
@@ -74,8 +76,10 @@ public:
         }
         
         int bestValue = std::numeric_limits<int>::min();
-                
-        for(std::list<Piece *>::iterator pieceNode = player->piecesList.begin(); pieceNode != player->piecesList.end(); pieceNode++) {
+        
+        std::list<Piece *> copyOfPiecesList = player->piecesList;
+        
+        for(std::list<Piece *>::iterator pieceNode = copyOfPiecesList.begin(); pieceNode != copyOfPiecesList.end(); pieceNode++) {
             
             std::list<Position> moves = player->centralBitboard->computePositionsFromBitboard((*pieceNode)->pieceStrategy->decentralBitboard->moves);
             

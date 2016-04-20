@@ -48,7 +48,7 @@
 #define NUMBER_OF_RANKS_ON_BOARD 8
 #define NUMBER_OF_FILES_ON_BOARD 8
 
-#define MAX_PLIES 2
+#define MAX_PLIES 3
 
 #define CHECK_STRING "Check!"
 #define CHECKMATE_STRING "Checkmate!"

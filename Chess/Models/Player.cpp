@@ -57,11 +57,27 @@ public:
     void addPiece(Piece *piece) {
         if (piece != nullptr) {
             this->piecesList.push_back(piece);
+            
+            if (this->color == white && this->opponent != nullptr) {
+                int a = 1 + 2;
+            }
+        } else {
+            
+            if (this->color == white) {
+                int a = 1 + 2;
+            }
         }
     }
     
     void removePiece(Piece *piece) {
+        
         if (piece != nullptr) {
+            
+            if (piece->order == 17) {
+                
+                int a = 1 + 2;
+            }
+            
             for(std::list<Piece *>::iterator iterator = this->piecesList.begin(); iterator != this->piecesList.end(); iterator++) {
                 if ((*iterator)->order == piece->order) {
                     this->piecesList.erase(iterator);
@@ -214,6 +230,10 @@ public:
             this->errorDelegate->error(PIECE_NOT_MOVED_STRING);
         }
         return false;
+    }
+    
+    void restoreOpponentPiece(Piece *piece) {
+        this->opponent->addPiece(piece);
     }
     
     bool moveKingSideRook() {

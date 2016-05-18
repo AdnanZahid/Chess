@@ -16,4 +16,5 @@ public:
     virtual bool moveKingSideRook() = 0;
     virtual bool moveQueenSideRook() = 0;
     virtual bool canCheckDuringPassing(Position position) = 0;
+    virtual void restoreOpponentPiece(Piece *piece) = 0;
 };

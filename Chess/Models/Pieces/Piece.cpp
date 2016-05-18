@@ -121,6 +121,8 @@ public:
         
         this->board->setPieceOnPosition(stack.fromState.piece, stack.fromState.position);
         this->board->setPieceOnPosition(stack.toState.piece, stack.toState.position);
+        
+        this->pieceDelegate->restoreOpponentPiece(stack.toState.piece);
     }
     
     bool canCheck(Position position) {

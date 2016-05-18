@@ -79,7 +79,8 @@ public:
     
     void displayError(std::string message) {
         
-        std::cout << message << std::endl;
+//        std::cout << message << std::endl;
+        this->display();
     }
     
 private:

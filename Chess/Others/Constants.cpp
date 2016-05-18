@@ -48,7 +48,7 @@
 #define NUMBER_OF_RANKS_ON_BOARD 8
 #define NUMBER_OF_FILES_ON_BOARD 8
 
-#define MAX_PLIES 3
+#define MAX_PLIES 2
 
 #define CHECK_STRING "Check!"
 #define CHECKMATE_STRING "Checkmate!"
@@ -86,12 +86,12 @@ typedef enum {
 } PieceType;
 
 const int startup[8][8] = {
-                            ROOK, KNIGHT, BISHOP, QUEEN, KING, BISHOP, KNIGHT, ROOK,
-                            PAWN,  PAWN,   PAWN,   PAWN, PAWN,  PAWN,   PAWN,  PAWN,
-                            EMPTY, EMPTY,  EMPTY,  EMPTY,EMPTY, EMPTY,  EMPTY, EMPTY,
-                            EMPTY, EMPTY,  EMPTY,  EMPTY,EMPTY, EMPTY,  EMPTY, EMPTY,
-                            EMPTY, EMPTY,  EMPTY,  EMPTY,EMPTY, EMPTY,  EMPTY, EMPTY,
-                            EMPTY, EMPTY,  EMPTY,  EMPTY,EMPTY, EMPTY,  EMPTY, EMPTY,
-                            -PAWN, -PAWN,  -PAWN, -PAWN,-PAWN,  -PAWN,  -PAWN, -PAWN,
-                            -ROOK,-KNIGHT,-BISHOP,-QUEEN,-KING,-BISHOP,-KNIGHT,-ROOK
-                          };
+    ROOK, KNIGHT, BISHOP, QUEEN, KING, BISHOP, KNIGHT, ROOK,
+    PAWN,  PAWN,   PAWN,   PAWN, PAWN,  PAWN,   PAWN,  PAWN,
+    QUEEN, QUEEN,  QUEEN,  QUEEN,QUEEN, QUEEN,  QUEEN, QUEEN,
+    EMPTY, EMPTY,  EMPTY,  EMPTY,EMPTY, EMPTY,  EMPTY, EMPTY,
+    EMPTY, EMPTY,  EMPTY,  EMPTY,EMPTY, EMPTY,  EMPTY, EMPTY,
+    EMPTY, EMPTY,  EMPTY,  EMPTY,EMPTY, EMPTY,  EMPTY, EMPTY,
+    -PAWN, -PAWN,  -PAWN, -PAWN,-PAWN,  -PAWN,  -PAWN, -PAWN,
+    -ROOK,-KNIGHT,-BISHOP,-QUEEN,-KING,-BISHOP,-KNIGHT,-ROOK
+};
